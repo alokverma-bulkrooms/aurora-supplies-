@@ -3,15 +3,15 @@ import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-green-900 to-slate-800 overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-green-100 to-slate-800 overflow-hidden">
       {/* Simple Background */}
       <div className="absolute inset-0">
         <div 
           className="w-full h-full opacity-20"
           style={{
             backgroundImage: `
-              radial-gradient(circle at 25% 25%, rgba(34, 197, 94, 0.3) 0%, transparent 50%),
-              radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.3) 0%, transparent 50%)
+              radial-gradient(circle at 25% 25%, rgba(134, 239, 172, 0.3) 0%, transparent 50%),
+              radial-gradient(circle at 75% 75%, rgba(167, 243, 208, 0.3) 0%, transparent 50%)
             `,
             backgroundSize: '100% 100%, 100% 100%'
           }}
@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="text-white space-y-8">
             <div className="space-y-6">
               <h1 className="text-6xl lg:text-8xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-green-400 via-emerald-300 to-teal-400 bg-clip-text text-transparent font-extrabold tracking-tight">
+                <span className="bg-gradient-to-r from-green-300 via-green-200 to-green-100 bg-clip-text text-transparent font-extrabold tracking-tight">
                   Aurora
                 </span>
                 <br />
@@ -42,11 +42,11 @@ const Hero = () => {
                 href="https://wa.me/1484916-6583" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl hover:shadow-green-500/50 transform hover:scale-105 transition-all duration-300"
+                className="group bg-gradient-to-r from-green-400 to-green-300 hover:from-green-300 hover:to-green-200 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl hover:shadow-green-300/50 transform hover:scale-105 transition-all duration-300"
               >
                 Get Instant Quote
               </a>
-              <button className="group border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300">
+              <button className="group border-2 border-green-300 text-green-300 hover:bg-green-300 hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300">
                 Watch Demo
               </button>
             </div>
