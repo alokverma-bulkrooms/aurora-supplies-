@@ -51,9 +51,14 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <button className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-6 py-2 rounded-lg font-medium shadow-lg hover:shadow-green-500/25 transform hover:scale-105 transition-all duration-300">
+            <a 
+              href="https://wa.me/1484916-6583" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-6 py-2 rounded-lg font-medium shadow-lg hover:shadow-green-500/25 transform hover:scale-105 transition-all duration-300"
+            >
               Get Quote
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -85,9 +90,14 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
-              <button className="w-full mt-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-4 py-2 rounded-lg font-medium">
+              <a 
+                href="https://wa.me/1484916-6583" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full mt-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-4 py-2 rounded-lg font-medium block text-center"
+              >
                 Get Quote
-              </button>
+              </a>
             </div>
           </div>
         )}
