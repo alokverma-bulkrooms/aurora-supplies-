@@ -23,15 +23,15 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3 group">
               <img 
-                src="/lovable-uploads/f24ce586-8d11-4595-9c26-db9d6e121c8e.png" 
-                alt="Aurora Global" 
+                src="/lovable-uploads/db4b3c7a-e646-499d-987f-88cb8762f865.png" 
+                alt="Aurora Supplies" 
                 className="h-12 w-12 rounded-lg shadow-lg group-hover:shadow-green-500/50 transition-all duration-300"
               />
               <div className="flex flex-col">
                 <span className="text-white text-2xl font-bold bg-gradient-to-r from-green-400 to-emerald-300 bg-clip-text text-transparent">
                   Aurora
                 </span>
-                <span className="text-green-200 text-sm font-medium -mt-1">Global</span>
+                <span className="text-green-200 text-sm font-medium -mt-1">Supplies</span>
               </div>
             </Link>
           </div>
