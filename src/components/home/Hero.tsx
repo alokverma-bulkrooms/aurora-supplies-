@@ -21,17 +21,17 @@ const Hero = () => {
       {/* Main Content */}
       <div className="relative z-10 min-h-screen flex items-center pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="text-white space-y-8">
+          <div className="text-black space-y-8">
             <div className="space-y-6">
               <h1 className="text-6xl lg:text-8xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-green-300 via-green-200 to-green-100 bg-clip-text text-transparent font-extrabold tracking-tight">
+                <span className="text-black font-extrabold tracking-tight">
                   Aurora
                 </span>
                 <br />
-                <span className="text-white font-light">Supplies</span>
+                <span className="text-black font-light">Supplies</span>
               </h1>
               
-              <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl lg:text-2xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
                 AI-powered international commodity trading platform connecting global markets 
                 with innovative solutions, delivering results in 24-48 hours with trusted partnerships worldwide.
               </p>
@@ -55,9 +55,9 @@ const Hero = () => {
       </div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-black animate-bounce">
         <div className="flex flex-col items-center space-y-2">
-          <span className="text-sm text-gray-300">Scroll to explore</span>
+          <span className="text-sm text-gray-800">Scroll to explore</span>
           <ChevronDown className="h-6 w-6" />
         </div>
       </div>
