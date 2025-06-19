@@ -1,15 +1,26 @@
 
 import { useEffect, useState } from "react";
 
+interface FloatingIcon {
+  id: number;
+  x: number;
+  y: number;
+  opacity: number;
+  scale: number;
+  icon: string;
+  dx: number;
+  dy: number;
+}
+
 const FloatingIcons = () => {
-  const [icons, setIcons] = useState<Array<{ id: number; x: number; y: number; opacity: number; scale: number }>>([]);
+  const [icons, setIcons] = useState<FloatingIcon[]>([]);
 
   useEffect(() => {
     const iconElements = [
       "🚢", "✈️", "🚛", "📦", "🌍", "💼", "📊", "🔄"
     ];
 
-    const newIcons = Array.from({ length: 15 }, (_, i) => ({
+    const newIcons: FloatingIcon[] = Array.from({ length: 15 }, (_, i) => ({
       id: i,
       x: Math.random() * window.innerWidth,
       y: Math.random() * window.innerHeight,

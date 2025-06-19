@@ -33,17 +33,19 @@ const Counters = () => {
         const increment = target / steps;
         let current = 0;
 
-        return setInterval(() => {
+        const intervalId = setInterval(() => {
           current += increment;
           if (current >= target) {
             current = target;
-            clearInterval(intervals.find(i => i === interval));
+            clearInterval(intervalId);
           }
           setCounts(prev => ({
             ...prev,
             [key]: current
           }));
         }, stepTime);
+
+        return intervalId;
       });
 
       return () => intervals.forEach(clearInterval);
