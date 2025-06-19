@@ -42,20 +42,26 @@ const AnimatedGlobe = () => {
         ctx.strokeStyle = "rgba(59, 130, 246, 0.3)";
         ctx.lineWidth = 1;
         ctx.beginPath();
-        ctx.ellipse(centerX, centerY, radius * Math.cos(angle), radius, angle, 0, Math.PI * 2);
+        ctx.ellipse(centerX, centerY, radius * Math.abs(Math.cos(angle)), radius, angle, 0, Math.PI * 2);
         ctx.stroke();
       }
 
-      // Draw latitude lines
+      // Draw latitude lines - Fixed calculation
       for (let i = 1; i < 4; i++) {
-        const y = centerY + (radius * (i - 2)) / 2;
-        const ellipseRadius = Math.sqrt(radius * radius - Math.pow((i - 2) * radius / 2, 2));
+        const yOffset = (radius * (i - 2)) / 2;
+        const y = centerY + yOffset;
         
-        ctx.strokeStyle = "rgba(59, 130, 246, 0.3)";
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.ellipse(centerX, y, ellipseRadius, ellipseRadius * 0.3, 0, 0, Math.PI * 2);
-        ctx.stroke();
+        // Ensure we don't get negative values under square root
+        const discriminant = radius * radius - yOffset * yOffset;
+        if (discriminant >= 0) {
+          const ellipseRadius = Math.sqrt(discriminant);
+          
+          ctx.strokeStyle = "rgba(59, 130, 246, 0.3)";
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.ellipse(centerX, y, ellipseRadius, ellipseRadius * 0.3, 0, 0, Math.PI * 2);
+          ctx.stroke();
+        }
       }
 
       // Draw animated trade routes
