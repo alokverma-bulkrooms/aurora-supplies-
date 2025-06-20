@@ -48,7 +48,7 @@ const QRSection = () => {
                 <div className="mb-8 relative">
                   <div className="absolute -top-2 -left-2 w-24 h-24 bg-gradient-to-br from-green-400/20 to-emerald-400/10 rounded-full blur-2xl"></div>
                   <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2 relative z-10">
-                    <span className="text-black font-extrabold tracking-tight bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+                    <span className="font-extrabold tracking-tight bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
                       Aurora
                     </span>
                     <br />
@@ -75,7 +75,7 @@ const QRSection = () => {
                       <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center">
                         <FileText className="w-4 h-4" />
                       </div>
-                      <span>Share your commodity requirements</span>
+                      <span>Share your requirements</span>
                     </div>
                     <div className="flex items-center space-x-3 text-gray-700">
                       <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center">

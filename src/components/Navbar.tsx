@@ -17,7 +17,7 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed w-full z-50 bg-transparent shadow-sm border-b border-gray-200/20">
+    <nav className="fixed w-full z-[100] bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-200/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
@@ -28,7 +28,7 @@ const Navbar = () => {
                 className="h-12 w-12 rounded-lg shadow-lg group-hover:shadow-green-500/50 transition-all duration-300"
               />
               <div className="flex flex-col">
-                <span className="text-black text-2xl font-bold bg-gradient-to-r from-green-400 to-emerald-300 bg-clip-text text-transparent">
+                <span className="text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
                   Aurora
                 </span>
                 <span className="text-green-600 text-sm font-medium -mt-1">Supplies</span>
