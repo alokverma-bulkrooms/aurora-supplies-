@@ -1,9 +1,10 @@
+
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-700 text-white">
+    <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Company Info */}
@@ -15,10 +16,10 @@ const Footer = () => {
                 className="h-10 w-10 rounded-lg shadow-lg"
               />
               <div className="flex flex-col">
-                <span className="text-xl font-bold bg-gradient-to-r from-green-400 to-emerald-300 bg-clip-text text-transparent">
+                <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent">
                   Aurora
                 </span>
-                <span className="text-green-200 text-sm font-medium -mt-1">Supplies</span>
+                <span className="text-blue-200 text-sm font-medium -mt-1">Supplies</span>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed max-w-sm">
@@ -29,21 +30,21 @@ const Footer = () => {
             <div className="flex space-x-3">
               <a 
                 href="#" 
-                className="group bg-green-600/20 hover:bg-green-600 p-3 rounded-lg transition-all duration-300"
+                className="group bg-blue-600/20 hover:bg-blue-600 p-3 rounded-lg transition-all duration-300"
               >
-                <Linkedin className="w-5 h-5 text-green-400 group-hover:text-white" />
+                <Linkedin className="w-5 h-5 text-blue-400 group-hover:text-white" />
               </a>
               <a 
                 href="#" 
-                className="group bg-emerald-600/20 hover:bg-emerald-600 p-3 rounded-lg transition-all duration-300"
+                className="group bg-indigo-600/20 hover:bg-indigo-600 p-3 rounded-lg transition-all duration-300"
               >
-                <Twitter className="w-5 h-5 text-emerald-400 group-hover:text-white" />
+                <Twitter className="w-5 h-5 text-indigo-400 group-hover:text-white" />
               </a>
               <a 
                 href="#" 
-                className="group bg-teal-600/20 hover:bg-teal-600 p-3 rounded-lg transition-all duration-300"
+                className="group bg-purple-600/20 hover:bg-purple-600 p-3 rounded-lg transition-all duration-300"
               >
-                <Facebook className="w-5 h-5 text-teal-400 group-hover:text-white" />
+                <Facebook className="w-5 h-5 text-purple-400 group-hover:text-white" />
               </a>
             </div>
           </div>
@@ -55,7 +56,7 @@ const Footer = () => {
               <li>
                 <Link 
                   to="/" 
-                  className="text-gray-300 hover:text-green-400 hover:translate-x-1 transition-all duration-300 inline-block text-base"
+                  className="text-gray-300 hover:text-blue-400 hover:translate-x-1 transition-all duration-300 inline-block text-base"
                 >
                   Home
                 </Link>
@@ -63,7 +64,7 @@ const Footer = () => {
               <li>
                 <Link 
                   to="/about" 
-                  className="text-gray-300 hover:text-green-400 hover:translate-x-1 transition-all duration-300 inline-block text-base"
+                  className="text-gray-300 hover:text-blue-400 hover:translate-x-1 transition-all duration-300 inline-block text-base"
                 >
                   About Us
                 </Link>
@@ -71,7 +72,7 @@ const Footer = () => {
               <li>
                 <Link 
                   to="/services" 
-                  className="text-gray-300 hover:text-green-400 hover:translate-x-1 transition-all duration-300 inline-block text-base"
+                  className="text-gray-300 hover:text-blue-400 hover:translate-x-1 transition-all duration-300 inline-block text-base"
                 >
                   Services
                 </Link>
@@ -79,7 +80,7 @@ const Footer = () => {
               <li>
                 <Link 
                   to="/contact" 
-                  className="text-gray-300 hover:text-green-400 hover:translate-x-1 transition-all duration-300 inline-block text-base"
+                  className="text-gray-300 hover:text-blue-400 hover:translate-x-1 transition-all duration-300 inline-block text-base"
                 >
                   Contact
                 </Link>
@@ -92,24 +93,24 @@ const Footer = () => {
             <h3 className="text-xl font-semibold text-white">Get in Touch</h3>
             <div className="space-y-4">
               <div className="flex items-center space-x-3 group">
-                <div className="bg-green-600/20 p-3 rounded-lg group-hover:bg-green-600/40 transition-colors duration-300">
-                  <Mail className="h-5 w-5 text-green-400" />
+                <div className="bg-blue-600/20 p-3 rounded-lg group-hover:bg-blue-600/40 transition-colors duration-300">
+                  <Mail className="h-5 w-5 text-blue-400" />
                 </div>
-                <a href="mailto:team@aurora.supplies" className="text-gray-300 hover:text-green-400 transition-colors duration-300 text-base">
+                <a href="mailto:team@aurora.supplies" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 text-base">
                   team@aurora.supplies
                 </a>
               </div>
               <div className="flex items-center space-x-3 group">
-                <div className="bg-emerald-600/20 p-3 rounded-lg group-hover:bg-emerald-600/40 transition-colors duration-300">
-                  <Phone className="h-5 w-5 text-emerald-400" />
+                <div className="bg-indigo-600/20 p-3 rounded-lg group-hover:bg-indigo-600/40 transition-colors duration-300">
+                  <Phone className="h-5 w-5 text-indigo-400" />
                 </div>
-                <a href="https://wa.me/14849166583" className="text-gray-300 hover:text-green-400 transition-colors duration-300 text-base">
+                <a href="https://wa.me/14849166583" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 text-base">
                   WhatsApp Chat
                 </a>
               </div>
               <div className="flex items-center space-x-3 group">
-                <div className="bg-teal-600/20 p-3 rounded-lg group-hover:bg-teal-600/40 transition-colors duration-300">
-                  <MapPin className="h-5 w-5 text-teal-400" />
+                <div className="bg-purple-600/20 p-3 rounded-lg group-hover:bg-purple-600/40 transition-colors duration-300">
+                  <MapPin className="h-5 w-5 text-purple-400" />
                 </div>
                 <span className="text-gray-300 text-base">Global Operations</span>
               </div>
