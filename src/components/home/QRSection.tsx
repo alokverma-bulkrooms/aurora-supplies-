@@ -30,34 +30,34 @@ const QRSection = () => {
             </div>
             
             {/* Right side - Content - Full width on mobile/tablet */}
-            <div className="p-10 flex flex-col justify-center bg-gradient-to-br from-white to-gray-50/50 lg:col-span-1 col-span-1">
+            <div className="p-8 lg:p-10 flex flex-col justify-center bg-gradient-to-br from-white to-gray-50/50 lg:col-span-1 col-span-1">
               
-              <div className="mb-8">
-                <p className="text-gray-700 text-lg leading-relaxed lg:mb-12 mb-6 font-medium">
+              <div className="mb-6 lg:mb-8">
+                <p className="text-black text-xl lg:text-2xl leading-relaxed lg:mb-8 mb-6 font-semibold">
                   Revolutionizing global trade with intelligence through an AI-powered platform.
                 </p>
                 
                 {/* Steps to get quotes */}
-                <div className="space-y-4 mb-8">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-4">How to Get Your Quote:</h3>
+                <div className="space-y-4 mb-6 lg:mb-8">
+                  <h3 className="text-lg lg:text-xl font-semibold text-gray-800 mb-3 lg:mb-4">How to Get Your Quote:</h3>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3 text-gray-700">
                       <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center">
                         <Smartphone className="w-4 h-4" />
                       </div>
-                      <span>Scan QR code or click the WhatsApp button</span>
+                      <span className="text-sm lg:text-base">Scan QR code or click the WhatsApp button</span>
                     </div>
                     <div className="flex items-center space-x-3 text-gray-700">
                       <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center">
                         <FileText className="w-4 h-4" />
                       </div>
-                      <span>Share your requirements</span>
+                      <span className="text-sm lg:text-base">Share your requirements</span>
                     </div>
                     <div className="flex items-center space-x-3 text-gray-700">
                       <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center">
                         <Clock className="w-4 h-4" />
                       </div>
-                      <span>Receive your personalized quote within 24-48 hours</span>
+                      <span className="text-sm lg:text-base">Receive your personalized quote within 24-48 hours</span>
                     </div>
                   </div>
                 </div>
