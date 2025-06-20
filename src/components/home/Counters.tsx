@@ -53,55 +53,67 @@ const Counters = () => {
   }, [inView]);
 
   return (
-    <section ref={ref} className="py-20 bg-slate-50">
+    <section ref={ref} className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-900 mb-4">
-            Global Impact in Numbers
+            Numbers That Define Global Reach
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Our platform connects global markets with trusted supplier networks.
+            We connect markets worldwide with speed, trust, and scale.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center group">
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-slate-200">
-              <div className="text-3xl lg:text-4xl font-bold text-slate-700 mb-2">
-                {Math.round(counts.offices)}
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border border-white/50 hover:border-green-200/50 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-50/30 to-emerald-50/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10">
+                <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">
+                  {Math.round(counts.offices)}
+                </div>
+                <div className="text-slate-700 text-base font-semibold mb-1">Offices</div>
+                <div className="text-slate-500 text-sm">Global Presence</div>
               </div>
-              <div className="text-slate-600 text-sm font-medium">Offices</div>
-              <div className="text-slate-500 text-xs mt-1">Global Presence</div>
             </div>
           </div>
 
           <div className="text-center group">
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-slate-200">
-              <div className="text-3xl lg:text-4xl font-bold text-slate-700 mb-2">
-                ${counts.volume.toFixed(1)}B+
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border border-white/50 hover:border-green-200/50 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-50/30 to-emerald-50/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10">
+                <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">
+                  ${counts.volume.toFixed(1)}B+
+                </div>
+                <div className="text-slate-700 text-base font-semibold mb-1">Trade Volume</div>
+                <div className="text-slate-500 text-sm">Annual Processing</div>
               </div>
-              <div className="text-slate-600 text-sm font-medium">Trade Volume</div>
-              <div className="text-slate-500 text-xs mt-1">Annual Processing</div>
             </div>
           </div>
 
           <div className="text-center group">
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-slate-200">
-              <div className="text-3xl lg:text-4xl font-bold text-slate-700 mb-2">
-                {Math.round(counts.clients)}+
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border border-white/50 hover:border-green-200/50 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-50/30 to-emerald-50/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10">
+                <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">
+                  {Math.round(counts.clients)}+
+                </div>
+                <div className="text-slate-700 text-base font-semibold mb-1">Global Clients</div>
+                <div className="text-slate-500 text-sm">Trusted Partners</div>
               </div>
-              <div className="text-slate-600 text-sm font-medium">Global Clients</div>
-              <div className="text-slate-500 text-xs mt-1">Trusted Partners</div>
             </div>
           </div>
 
           <div className="text-center group">
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-slate-200">
-              <div className="text-3xl lg:text-4xl font-bold text-slate-700 mb-2">
-                {Math.round(counts.countries)}+
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border border-white/50 hover:border-green-200/50 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-50/30 to-emerald-50/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10">
+                <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">
+                  {Math.round(counts.countries)}+
+                </div>
+                <div className="text-slate-700 text-base font-semibold mb-1">Countries Served</div>
+                <div className="text-slate-500 text-sm">Worldwide Reach</div>
               </div>
-              <div className="text-slate-600 text-sm font-medium">Countries Served</div>
-              <div className="text-slate-500 text-xs mt-1">Worldwide Reach</div>
             </div>
           </div>
         </div>
