@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -70,10 +69,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-white p-8 lg:p-12">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">Send us a Message</h2>
+    <div className="bg-white p-6 lg:p-8">
+      <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
       
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
             Full Name *
@@ -85,7 +84,7 @@ const ContactForm = () => {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-black"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 placeholder-black"
             placeholder="Your full name"
           />
         </div>
@@ -101,7 +100,7 @@ const ContactForm = () => {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-black"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 placeholder-black"
             placeholder="your.email@company.com"
           />
         </div>
@@ -116,7 +115,7 @@ const ContactForm = () => {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-black"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 placeholder-black"
             placeholder="Your company name"
           />
         </div>
@@ -131,7 +130,7 @@ const ContactForm = () => {
             required
             value={formData.country}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200"
           >
             <option value="">Select your country</option>
             <option value="India">India</option>
@@ -157,7 +156,7 @@ const ContactForm = () => {
             required
             value={formData.service}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200"
           >
             <option value="">Select service interest</option>
             <option value="Quote Request">Quote Request</option>
@@ -177,10 +176,10 @@ const ContactForm = () => {
             id="message"
             name="message"
             required
-            rows={6}
+            rows={4}
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none placeholder-black"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 resize-none placeholder-black"
             placeholder="Tell us about your requirements..."
           ></textarea>
         </div>
@@ -188,7 +187,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-4 px-8 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl hover:from-green-600 hover:to-emerald-600 transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+          className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-3 px-8 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl hover:from-green-600 hover:to-emerald-600 transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
         >
           {isSubmitting ? "Sending..." : "Send Message"}
         </button>
