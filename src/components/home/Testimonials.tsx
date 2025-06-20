@@ -78,7 +78,7 @@ const Testimonials = () => {
     
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => 
-        prevIndex === testimonials.length - 3 ? 0 : prevIndex + 1
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
       );
     }, 4000);
 
@@ -87,14 +87,26 @@ const Testimonials = () => {
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => 
-      prevIndex === testimonials.length - 3 ? 0 : prevIndex + 1
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? testimonials.length - 3 : prevIndex - 1
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
+  };
+
+  const getVisibleTestimonials = () => {
+    const visibleCount = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+    const testimonialsList = [];
+    
+    for (let i = 0; i < visibleCount; i++) {
+      const index = (currentIndex + i) % testimonials.length;
+      testimonialsList.push(testimonials[index]);
+    }
+    
+    return testimonialsList;
   };
 
   return (
@@ -114,36 +126,31 @@ const Testimonials = () => {
           onMouseEnter={() => setIsAutoPlaying(false)}
           onMouseLeave={() => setIsAutoPlaying(true)}
         >
-          <div 
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
-          >
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="w-1/3 flex-shrink-0 px-4">
-                <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 h-full border border-gray-100 hover:border-green-200">
-                  <div className="flex items-center mb-6">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover border-4 border-green-100"
-                    />
-                    <div className="ml-4">
-                      <h4 className="text-lg font-semibold text-black">
-                        {testimonial.name}
-                      </h4>
-                      <p className="text-sm text-gray-600">
-                        {testimonial.role}
-                      </p>
-                      <p className="text-sm text-green-600 font-medium">
-                        {testimonial.company}
-                      </p>
-                    </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {getVisibleTestimonials().map((testimonial) => (
+              <div key={testimonial.id} className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-green-200">
+                <div className="flex items-center mb-6">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-16 h-16 rounded-full object-cover border-4 border-green-100"
+                  />
+                  <div className="ml-4">
+                    <h4 className="text-lg font-semibold text-black">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      {testimonial.role}
+                    </p>
+                    <p className="text-sm text-green-600 font-medium">
+                      {testimonial.company}
+                    </p>
                   </div>
-                  
-                  <p className="text-gray-700 leading-relaxed italic text-lg">
-                    "{testimonial.content}"
-                  </p>
                 </div>
+                
+                <p className="text-gray-700 leading-relaxed italic text-lg">
+                  "{testimonial.content}"
+                </p>
               </div>
             ))}
           </div>

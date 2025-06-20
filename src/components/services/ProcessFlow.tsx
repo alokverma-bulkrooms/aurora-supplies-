@@ -1,23 +1,25 @@
 
+import { FileText, Search, CheckCircle, Truck } from "lucide-react";
+
 const ProcessFlow = () => {
   const steps = [
     {
-      step: "1",
+      icon: <FileText className="w-8 h-8" />,
       title: "Submit Requirements",
       description: "Share your sourcing needs through our platform.",
     },
     {
-      step: "2",
+      icon: <Search className="w-8 h-8" />,
       title: "AI Matching",
       description: "Our AI connects you with verified suppliers.",
     },
     {
-      step: "3",
+      icon: <CheckCircle className="w-8 h-8" />,
       title: "Receive Quotes",
       description: "Get optimized quotes within 24-48 hours.",
     },
     {
-      step: "4",
+      icon: <Truck className="w-8 h-8" />,
       title: "Complete Order",
       description: "Finalize your order with quality assurance.",
     },
@@ -35,16 +37,16 @@ const ProcessFlow = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <div key={index} className="text-center">
-              <div className="bg-gradient-to-r from-emerald-500 to-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg">
-                {step.step}
+            <div key={index} className="text-center group">
+              <div className="bg-gradient-to-r from-emerald-500 to-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                {step.icon}
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">
+              <h3 className="text-lg font-bold text-white mb-3">
                 {step.title}
               </h3>
-              <p className="text-emerald-200">{step.description}</p>
+              <p className="text-emerald-200 leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>

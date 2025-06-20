@@ -44,21 +44,8 @@ const QRSection = () => {
             <div className="p-10 flex flex-col justify-center bg-gradient-to-br from-white to-gray-50/50 lg:col-span-1 col-span-1">
               
               <div className="mb-8">
-                {/* Aurora Supplies with enhanced design */}
-                <div className="mb-8 relative">
-                  <div className="absolute -top-2 -left-2 w-24 h-24 bg-gradient-to-br from-green-400/20 to-emerald-400/10 rounded-full blur-2xl"></div>
-                  <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2 relative z-10">
-                    <span className="font-extrabold tracking-tight bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
-                      Aurora
-                    </span>
-                    <br />
-                    <span className="text-gray-800 font-light">Supplies</span>
-                  </h1>
-                  <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mt-4"></div>
-                </div>
-                
                 <p className="text-gray-700 text-lg leading-relaxed mb-8 font-medium">
-                  Revolutionizing global trade with intelligence through an AI-powered platform and trusted supplier networks.
+                  Revolutionizing global trade with intelligence through an AI-powered platform.
                 </p>
                 
                 {/* Steps to get quotes */}
@@ -95,7 +82,8 @@ const QRSection = () => {
                   className="inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/50 w-full sm:w-auto group"
                 >
                   <MessageCircle className="w-6 h-6" />
-                  <span>Start Your Quote Request</span>
+                  <span className="block sm:hidden">Chat on WhatsApp</span>
+                  <span className="hidden sm:block">Start Your Quote Request</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </a>
               </div>

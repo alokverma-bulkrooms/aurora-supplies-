@@ -28,10 +28,10 @@ const Navbar = () => {
                 className="h-12 w-12 rounded-lg shadow-lg group-hover:shadow-green-500/50 transition-all duration-300"
               />
               <div className="flex flex-col">
-                <span className="text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
+                <span className="text-2xl font-bold text-slate-800">
                   Aurora
                 </span>
-                <span className="text-green-600 text-sm font-medium -mt-1">Supplies</span>
+                <span className="text-slate-700 text-sm font-light -mt-1">Supplies</span>
               </div>
             </Link>
           </div>

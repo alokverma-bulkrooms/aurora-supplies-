@@ -10,7 +10,7 @@ const CompanyStory = () => {
             </h1>
             <div className="space-y-4 text-lg leading-relaxed text-gray-700">
               <p>
-                Founded in 2009 in Bangalore, Karnataka, India, Aurora Supplies revolutionizes global sourcing 
+                Founded in 2017 in Bangalore, Karnataka, India, Aurora Supplies revolutionizes global sourcing 
                 through AI-powered supplier networks.
               </p>
               <p>
@@ -27,19 +27,19 @@ const CompanyStory = () => {
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   <div>
-                    <div className="font-medium text-gray-900">2009 - Founded in Bangalore</div>
+                    <div className="font-medium text-gray-900">2017 - Founded in Bangalore</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   <div>
-                    <div className="font-medium text-gray-900">2015 - AI Integration</div>
+                    <div className="font-medium text-gray-900">2023 - AI Integration</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   <div>
-                    <div className="font-medium text-gray-900">2024 - $1.5B+ Volume</div>
+                    <div className="font-medium text-gray-900">2025 - $1.5B+ Volume</div>
                   </div>
                 </div>
               </div>
