@@ -17,7 +17,7 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-slate-700/95 backdrop-blur-lg fixed w-full z-50 shadow-xl border-b border-green-500/20">
+    <nav className="bg-slate-900/95 backdrop-blur-lg fixed w-full z-50 shadow-xl border-b border-green-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
@@ -75,7 +75,7 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-600/95 rounded-lg mt-2 border border-green-500/20">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-800/95 rounded-lg mt-2 border border-green-500/20">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -83,8 +83,8 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
                     isActive(item.href) 
-                      ? "text-green-400 bg-slate-500/50" 
-                      : "text-gray-300 hover:text-white hover:bg-slate-500/50"
+                      ? "text-green-400 bg-slate-700/50" 
+                      : "text-gray-300 hover:text-white hover:bg-slate-700/50"
                   }`}
                 >
                   {item.name}

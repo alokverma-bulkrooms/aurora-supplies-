@@ -60,7 +60,7 @@ const QRSection = () => {
                 </div>
                 
                 <p className="text-gray-700 text-lg leading-relaxed mb-8 font-medium">
-                  AI-powered global sourcing platform delivering optimized quotes in 24–48 hours through trusted international supplier networks.
+                  AI-powered international commodity trading platform connecting global markets with innovative solutions, delivering results in 24-48 hours with trusted partnerships worldwide.
                 </p>
                 
                 {/* Steps to get quotes */}
