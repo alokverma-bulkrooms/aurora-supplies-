@@ -1,3 +1,4 @@
+
 const ContactInfo = () => {
   const services = [
     "Global Sourcing",
@@ -6,15 +7,6 @@ const ContactInfo = () => {
     "Supply Chain Management",
     "AI-Powered Analytics",
     "Supplier Verification"
-  ];
-
-  const countries = [
-    { name: "India", flag: "🇮🇳" },
-    { name: "USA", flag: "🇺🇸" },
-    { name: "China", flag: "🇨🇳" },
-    { name: "Germany", flag: "🇩🇪" },
-    { name: "Japan", flag: "🇯🇵" },
-    { name: "Brazil", flag: "🇧🇷" }
   ];
 
   return (
@@ -35,8 +27,8 @@ const ContactInfo = () => {
           <div className="flex items-start space-x-4 bg-white p-4 rounded-lg shadow-sm">
             <div className="text-2xl">📞</div>
             <div>
-              <h4 className="font-medium text-green-600 text-lg">Call Us</h4>
-              <p className="text-gray-900 font-medium">+1 (555) 123-4567</p>
+              <h4 className="font-medium text-green-600 text-lg">+1 (484) 916-6583</h4>
+              <p className="text-gray-900 font-medium">Available 24/7</p>
             </div>
           </div>
           

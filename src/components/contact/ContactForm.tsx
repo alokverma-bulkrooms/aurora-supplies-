@@ -10,7 +10,7 @@ const ContactForm = () => {
     email: "",
     company: "",
     country: "",
-    subject: "",
+    service: "",
     message: ""
   });
 
@@ -26,7 +26,7 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbx91mrQcjpHyIunZB8W3epP8-MHVfrIdpoeAEYPLe3ozhkxLCg-8jp1QHNFcyxVZTCyBQ/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbz6-Ysr5KcJvCXCYRlN6M6znaKhOAkz1wCBUOkUGYEKs14CtvToAWwouoEf_c-YqnhGMA/exec", {
         method: "POST",
         mode: "no-cors",
         headers: {
@@ -37,7 +37,7 @@ const ContactForm = () => {
           email: formData.email,
           company: formData.company,
           country: formData.country,
-          subject: formData.subject,
+          service: formData.service,
           message: formData.message,
           timestamp: new Date().toISOString()
         })
@@ -54,7 +54,7 @@ const ContactForm = () => {
         email: "",
         company: "",
         country: "",
-        subject: "",
+        service: "",
         message: ""
       });
     } catch (error) {
@@ -85,7 +85,7 @@ const ContactForm = () => {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-black"
             placeholder="Your full name"
           />
         </div>
@@ -101,7 +101,7 @@ const ContactForm = () => {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-black"
             placeholder="your.email@company.com"
           />
         </div>
@@ -116,7 +116,7 @@ const ContactForm = () => {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-black"
             placeholder="Your company name"
           />
         </div>
@@ -148,18 +148,18 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-            Subject *
+          <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
+            Service Interest *
           </label>
           <select
-            id="subject"
-            name="subject"
+            id="service"
+            name="service"
             required
-            value={formData.subject}
+            value={formData.service}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
           >
-            <option value="">Select subject</option>
+            <option value="">Select service interest</option>
             <option value="Quote Request">Quote Request</option>
             <option value="General Inquiry">General Inquiry</option>
             <option value="Partnership">Partnership</option>
@@ -180,7 +180,7 @@ const ContactForm = () => {
             rows={6}
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none placeholder-black"
             placeholder="Tell us about your requirements..."
           ></textarea>
         </div>
@@ -188,7 +188,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-4 px-8 rounded-lg font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+          className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-4 px-8 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl hover:from-green-600 hover:to-emerald-600 transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
         >
           {isSubmitting ? "Sending..." : "Send Message"}
         </button>
