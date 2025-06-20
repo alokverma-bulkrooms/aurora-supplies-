@@ -34,7 +34,7 @@ const QRSection = () => {
               
               <div className="mb-6 lg:mb-8">
                 <p className="text-black text-xl lg:text-2xl leading-relaxed lg:mb-8 mb-6 font-semibold">
-                  Revolutionizing global trade with intelligence through an AI-powered platform.
+                  Reduces what typically takes 20–25 days to just 24–48 hours, delivering optimized quotes at the best value.
                 </p>
                 
                 {/* Steps to get quotes */}
