@@ -49,8 +49,7 @@ const QRSection = () => {
                 </h1>
                 
                 <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                  AI-powered international commodity trading platform connecting global markets 
-                  with innovative solutions, delivering results in 24-48 hours with trusted partnerships worldwide.
+                  AI-powered international commodity trading platform connecting global markets with innovative solutions, delivering results in 24-48 hours with trusted partnerships worldwide.
                 </p>
                 
                 <div className="flex items-center space-x-3 text-gray-600 mb-8">
