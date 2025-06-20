@@ -2,73 +2,49 @@
 const ProcessFlow = () => {
   const steps = [
     {
-      number: "01",
+      step: "1",
       title: "Submit Requirements",
-      description: "Share your product specifications and requirements through our platform.",
-      icon: "📝"
+      description: "Share your sourcing needs through our platform.",
     },
     {
-      number: "02", 
+      step: "2",
       title: "AI Matching",
-      description: "Our AI system analyzes and matches you with the best suppliers.",
-      icon: "🤖"
+      description: "Our AI connects you with verified suppliers.",
     },
     {
-      number: "03",
-      title: "Supplier Verification",
-      description: "We verify and validate potential suppliers for quality and reliability.",
-      icon: "✅"
+      step: "3",
+      title: "Receive Quotes",
+      description: "Get optimized quotes within 24-48 hours.",
     },
     {
-      number: "04",
-      title: "Quote Generation",
-      description: "Receive competitive quotes from multiple verified suppliers.",
-      icon: "💰"
+      step: "4",
+      title: "Complete Order",
+      description: "Finalize your order with quality assurance.",
     },
-    {
-      number: "05",
-      title: "Negotiation Support",
-      description: "Our experts help negotiate the best terms and pricing.",
-      icon: "🤝"
-    },
-    {
-      number: "06",
-      title: "Order Fulfillment",
-      description: "Seamless order processing and delivery tracking.",
-      icon: "📦"
-    }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-red-50">
+    <section className="py-20 bg-gradient-to-br from-teal-800 to-emerald-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-pink-900 mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             How It Works
           </h2>
-          <p className="text-lg text-pink-700 max-w-2xl mx-auto">
-            Our streamlined process ensures efficient sourcing from start to finish.
+          <p className="text-lg text-emerald-200 max-w-2xl mx-auto">
+            Simple process, powerful results.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, index) => (
-            <div
-              key={index}
-              className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-pink-200/50 hover:shadow-xl transition-all duration-300"
-            >
-              <div className="flex items-center mb-4">
-                <div className="bg-gradient-to-r from-pink-600 to-rose-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mr-4">
-                  {step.number}
-                </div>
-                <div className="text-3xl">{step.icon}</div>
+            <div key={index} className="text-center">
+              <div className="bg-gradient-to-r from-emerald-500 to-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg">
+                {step.step}
               </div>
-              <h3 className="text-xl font-bold text-pink-900 mb-3">
+              <h3 className="text-lg font-bold text-white mb-2">
                 {step.title}
               </h3>
-              <p className="text-pink-700 leading-relaxed">
-                {step.description}
-              </p>
+              <p className="text-emerald-200">{step.description}</p>
             </div>
           ))}
         </div>

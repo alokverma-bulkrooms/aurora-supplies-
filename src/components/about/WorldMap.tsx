@@ -7,16 +7,16 @@ const WorldMap = () => {
   const offices = [
     {
       id: "india",
-      name: "Bangalore, India",
+      name: "Mumbai, India",
       position: { top: "45%", left: "67%" },
-      description: "Founding Office & Headquarters",
+      description: "Asia-Pacific Operations",
       employees: "150+"
     },
     {
       id: "usa",
       name: "New York, USA",
       position: { top: "35%", left: "25%" },
-      description: "Americas Operations",
+      description: "Americas Headquarters",
       employees: "75+"
     },
     {
@@ -29,37 +29,37 @@ const WorldMap = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-rose-50 text-black">
+    <section className="py-20 bg-gradient-to-br from-teal-800 to-emerald-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-purple-900 mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             Global Presence
           </h2>
-          <p className="text-lg text-purple-700 max-w-2xl mx-auto">
+          <p className="text-lg text-emerald-200 max-w-2xl mx-auto">
             Strategic offices ensuring 24/7 coverage and local expertise.
           </p>
         </div>
 
-        <div className="bg-white/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-purple-200/50">
+        <div className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-white/20">
           <div className="relative">
-            <div className="relative w-full h-80 bg-purple-100/50 rounded-lg overflow-hidden">
+            <div className="relative w-full h-80 bg-emerald-950/50 rounded-lg overflow-hidden">
               <svg
                 viewBox="0 0 1000 500"
                 className="w-full h-full"
               >
                 <path
                   d="M150 200 L200 180 L250 190 L280 210 L250 240 L200 230 L150 220 Z"
-                  fill="#8b5cf6"
+                  fill="#10b981"
                   opacity="0.6"
                 />
                 <path
                   d="M600 180 L700 160 L750 180 L780 200 L750 220 L700 210 L650 200 L600 190 Z"
-                  fill="#8b5cf6"
+                  fill="#10b981"
                   opacity="0.6"
                 />
                 <path
                   d="M750 190 L850 170 L900 180 L920 200 L900 220 L850 210 L800 200 L750 200 Z"
-                  fill="#8b5cf6"
+                  fill="#10b981"
                   opacity="0.6"
                 />
               </svg>
@@ -73,8 +73,8 @@ const WorldMap = () => {
                 >
                   <div className={`w-4 h-4 rounded-full border-2 border-white shadow-lg ${
                     selectedOffice === office.id 
-                      ? "bg-purple-500 scale-125" 
-                      : "bg-purple-600 hover:bg-purple-500"
+                      ? "bg-emerald-400 scale-125" 
+                      : "bg-emerald-500 hover:bg-emerald-400"
                   } transition-all duration-300`}></div>
                 </div>
               ))}
@@ -84,18 +84,18 @@ const WorldMap = () => {
               {offices.map((office) => (
                 <div
                   key={office.id}
-                  className={`bg-white/40 backdrop-blur-sm rounded-lg p-4 shadow border cursor-pointer transition-all duration-300 ${
+                  className={`bg-white/20 backdrop-blur-sm rounded-lg p-4 shadow border cursor-pointer transition-all duration-300 ${
                     selectedOffice === office.id 
-                      ? "border-purple-400 transform scale-105" 
-                      : "border-purple-200/50 hover:border-purple-400"
+                      ? "border-emerald-400 transform scale-105" 
+                      : "border-white/30 hover:border-emerald-400"
                   }`}
                   onClick={() => setSelectedOffice(office.id)}
                 >
-                  <h3 className="text-lg font-bold text-purple-900 mb-1">
+                  <h3 className="text-lg font-bold text-white mb-1">
                     {office.name}
                   </h3>
-                  <p className="text-purple-700 text-sm mb-2">{office.description}</p>
-                  <div className="text-xs text-purple-600">
+                  <p className="text-emerald-200 text-sm mb-2">{office.description}</p>
+                  <div className="text-xs text-emerald-300">
                     {office.employees} employees
                   </div>
                 </div>
