@@ -9,17 +9,17 @@ const Counters = () => {
   });
 
   const [counts, setCounts] = useState({
-    countries: 0,
+    offices: 0,
     volume: 0,
-    experience: 0,
     clients: 0,
+    countries: 0,
   });
 
   const targets = {
-    countries: 50,
-    volume: 2.5, // in billions
-    experience: 15,
-    clients: 200,
+    offices: 3,
+    volume: 1.5, // in billions
+    clients: 500,
+    countries: 27,
   };
 
   useEffect(() => {
@@ -53,56 +53,55 @@ const Counters = () => {
   }, [inView]);
 
   return (
-    <section ref={ref} className="py-20 bg-white">
+    <section ref={ref} className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-slate-900 mb-4">
             Global Impact in Numbers
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our AI-powered platform has revolutionized international trade, 
-            connecting markets and optimizing supply chains across the globe.
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            Our platform connects global markets with trusted supplier networks.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="text-center group">
-            <div className="bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">
-                {Math.round(counts.countries)}+
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-slate-200">
+              <div className="text-3xl lg:text-4xl font-bold text-slate-700 mb-2">
+                {Math.round(counts.offices)}
               </div>
-              <div className="text-blue-100 text-lg font-medium">Countries</div>
-              <div className="text-blue-200 text-sm mt-2">Global Reach</div>
+              <div className="text-slate-600 text-sm font-medium">Offices</div>
+              <div className="text-slate-500 text-xs mt-1">Global Presence</div>
             </div>
           </div>
 
           <div className="text-center group">
-            <div className="bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-slate-200">
+              <div className="text-3xl lg:text-4xl font-bold text-slate-700 mb-2">
                 ${counts.volume.toFixed(1)}B+
               </div>
-              <div className="text-green-100 text-lg font-medium">Trade Volume</div>
-              <div className="text-green-200 text-sm mt-2">Annual Processing</div>
+              <div className="text-slate-600 text-sm font-medium">Trade Volume</div>
+              <div className="text-slate-500 text-xs mt-1">Annual Processing</div>
             </div>
           </div>
 
           <div className="text-center group">
-            <div className="bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">
-                {Math.round(counts.experience)}+
-              </div>
-              <div className="text-purple-100 text-lg font-medium">Years</div>
-              <div className="text-purple-200 text-sm mt-2">Experience</div>
-            </div>
-          </div>
-
-          <div className="text-center group">
-            <div className="bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-slate-200">
+              <div className="text-3xl lg:text-4xl font-bold text-slate-700 mb-2">
                 {Math.round(counts.clients)}+
               </div>
-              <div className="text-orange-100 text-lg font-medium">Clients</div>
-              <div className="text-orange-200 text-sm mt-2">Trusted Partners</div>
+              <div className="text-slate-600 text-sm font-medium">Global Clients</div>
+              <div className="text-slate-500 text-xs mt-1">Trusted Partners</div>
+            </div>
+          </div>
+
+          <div className="text-center group">
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-slate-200">
+              <div className="text-3xl lg:text-4xl font-bold text-slate-700 mb-2">
+                {Math.round(counts.countries)}+
+              </div>
+              <div className="text-slate-600 text-sm font-medium">Countries Served</div>
+              <div className="text-slate-500 text-xs mt-1">Worldwide Reach</div>
             </div>
           </div>
         </div>

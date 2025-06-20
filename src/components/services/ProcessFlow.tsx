@@ -2,90 +2,51 @@
 const ProcessFlow = () => {
   const steps = [
     {
-      number: "01",
-      title: "Market Research",
-      description: "AI analyzes global market conditions, identifying opportunities and trends.",
-      icon: "🔍"
+      step: "1",
+      title: "Submit Requirements",
+      description: "Share your sourcing needs through our platform.",
     },
     {
-      number: "02",
-      title: "Strategy Development",
-      description: "Custom trading strategies developed based on your specific requirements.",
-      icon: "🎯"
+      step: "2",
+      title: "AI Matching",
+      description: "Our AI connects you with verified suppliers.",
     },
     {
-      number: "03",
-      title: "Risk Assessment",
-      description: "Comprehensive risk analysis and mitigation strategies implementation.",
-      icon: "⚡"
+      step: "3",
+      title: "Receive Quotes",
+      description: "Get optimized quotes within 24-48 hours.",
     },
     {
-      number: "04",
-      title: "Trade Execution",
-      description: "Automated trade execution with real-time monitoring and optimization.",
-      icon: "🚀"
+      step: "4",
+      title: "Complete Order",
+      description: "Finalize your order with quality assurance.",
     },
-    {
-      number: "05",
-      title: "Logistics Management",
-      description: "End-to-end logistics coordination and supply chain optimization.",
-      icon: "📦"
-    },
-    {
-      number: "06",
-      title: "Performance Tracking",
-      description: "Continuous monitoring and reporting with actionable insights.",
-      icon: "📊"
-    }
   ];
 
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our Process
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">
+            How It Works
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A streamlined, AI-powered approach to international commodity trading that delivers results.
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            Simple process, powerful results.
           </p>
         </div>
 
-        <div className="relative">
-          {/* Connection Lines */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 transform -translate-y-1/2"></div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8">
-            {steps.map((step, index) => (
-              <div key={index} className="relative">
-                <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group border-2 border-gray-100 hover:border-blue-300">
-                  <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-600 text-white rounded-full font-bold text-lg mb-4 group-hover:scale-110 transition-transform duration-300">
-                      {step.number}
-                    </div>
-                    
-                    <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-300">
-                      {step.icon}
-                    </div>
-                    
-                    <h3 className="text-lg font-bold text-gray-900 mb-3">
-                      {step.title}
-                    </h3>
-                    
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {steps.map((step, index) => (
+            <div key={index} className="text-center">
+              <div className="bg-slate-700 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                {step.step}
               </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-16 text-center">
-          <button className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-            Start Your Journey
-          </button>
+              <h3 className="text-lg font-bold text-slate-900 mb-2">
+                {step.title}
+              </h3>
+              <p className="text-slate-600">{step.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
