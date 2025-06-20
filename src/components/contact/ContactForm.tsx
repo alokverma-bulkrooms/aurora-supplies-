@@ -70,10 +70,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-white p-4 lg:p-6">
-      <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4 lg:mb-6">Send us a Message</h2>
-      
-      <form onSubmit={handleSubmit} className="space-y-3">
+    <div className="bg-white p-6 lg:p-8">
+      <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
             Full Name *
@@ -177,7 +175,7 @@ const ContactForm = () => {
             id="message"
             name="message"
             required
-            rows={3}
+            rows={4}
             value={formData.message}
             onChange={handleChange}
             className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 resize-none placeholder-gray-500 text-sm"
@@ -188,7 +186,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-2.5 px-6 rounded-lg font-semibold text-base shadow-lg hover:shadow-xl hover:from-green-600 hover:to-emerald-600 transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+          className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-3 px-6 rounded-lg font-semibold text-base shadow-lg hover:shadow-xl hover:from-green-600 hover:to-emerald-600 transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
         >
           {isSubmitting ? "Sending..." : "Send Message"}
         </button>
