@@ -27,24 +27,13 @@ const QRSection = () => {
                   className="w-40 h-40 object-contain"
                 />
               </div>
-              
-              {/* Chat Button */}
-              <a 
-                href="https://wa.me/14849166583" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#128C7E] hover:to-[#25D366] text-white px-6 py-3 rounded-full font-semibold inline-flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/50 relative z-10"
-              >
-                <MessageCircle className="w-5 h-5" />
-                <span>Chat on WhatsApp</span>
-              </a>
             </div>
             
             {/* Right side - Content - Full width on mobile/tablet */}
             <div className="p-10 flex flex-col justify-center bg-gradient-to-br from-white to-gray-50/50 lg:col-span-1 col-span-1">
               
               <div className="mb-8">
-                <p className="text-gray-700 text-lg leading-relaxed mb-8 font-medium">
+                <p className="text-gray-700 text-lg leading-relaxed lg:mb-12 mb-6 font-medium">
                   Revolutionizing global trade with intelligence through an AI-powered platform.
                 </p>
                 
@@ -71,6 +60,19 @@ const QRSection = () => {
                       <span>Receive your personalized quote within 24-48 hours</span>
                     </div>
                   </div>
+                </div>
+
+                {/* WhatsApp Button - Only visible on mobile/tablet */}
+                <div className="lg:hidden">
+                  <a 
+                    href="https://wa.me/14849166583" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#128C7E] hover:to-[#25D366] text-white px-6 py-3 rounded-full font-semibold inline-flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/50 w-full justify-center"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    <span>Chat on WhatsApp</span>
+                  </a>
                 </div>
               </div>
             </div>
