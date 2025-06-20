@@ -1,3 +1,4 @@
+
 import { MessageCircle, ArrowRight, Smartphone, FileText, Clock } from "lucide-react";
 
 const QRSection = () => {
@@ -57,7 +58,7 @@ const QRSection = () => {
                 </div>
                 
                 <p className="text-gray-700 text-lg leading-relaxed mb-8 font-medium">
-                  AI-powered global sourcing platform delivering optimized quotes in 24–48 hours through trusted international supplier networks.
+                  Revolutionizing global trade with intelligence through an AI-powered platform and trusted supplier networks.
                 </p>
                 
                 {/* Steps to get quotes */}
@@ -97,10 +98,6 @@ const QRSection = () => {
                   <span>Start Your Quote Request</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </a>
-                
-                <div className="text-sm text-gray-600 text-center sm:text-left font-medium">
-                  <strong className="text-green-700">Aurora Supplies</strong> - Revolutionizing Global Trade with Intelligence for Seamless Supply
-                </div>
               </div>
             </div>
           </div>

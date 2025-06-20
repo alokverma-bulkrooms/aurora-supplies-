@@ -24,13 +24,13 @@ const ServiceCards = () => {
   ];
 
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-20 bg-gradient-to-br from-emerald-50 to-green-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl font-bold text-emerald-900 mb-4">
             What We Offer
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg text-emerald-700 max-w-2xl mx-auto">
             Comprehensive sourcing solutions for global businesses.
           </p>
         </div>
@@ -39,13 +39,13 @@ const ServiceCards = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-slate-200"
+              className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-emerald-200/50"
             >
               <div className="text-3xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">
+              <h3 className="text-xl font-bold text-emerald-900 mb-3">
                 {service.title}
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-emerald-800 leading-relaxed">
                 {service.description}
               </p>
             </div>
