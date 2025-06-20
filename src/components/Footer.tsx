@@ -23,7 +23,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed max-w-sm">
-              AI-powered international commodity trading platform connecting global markets with innovative solutions worldwide.
+              An AI-powered global sourcing platform transforming international trade by connecting markets worldwide.
             </p>
             
             {/* Social Media */}

@@ -1,6 +1,5 @@
 
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
@@ -71,11 +70,8 @@ const testimonials = [
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   useEffect(() => {
-    if (!isAutoPlaying) return;
-    
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => 
         prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
@@ -83,19 +79,7 @@ const Testimonials = () => {
     }, 4000);
 
     return () => clearInterval(interval);
-  }, [isAutoPlaying]);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
+  }, []);
 
   const getVisibleTestimonials = () => {
     const visibleCount = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
@@ -110,8 +94,12 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-br from-slate-50 via-gray-50 to-green-50/20 relative overflow-hidden">
+      {/* Background smooth gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-50/50 to-transparent"></div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             Client Testimonials
@@ -121,14 +109,10 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div 
-          className="relative overflow-hidden"
-          onMouseEnter={() => setIsAutoPlaying(false)}
-          onMouseLeave={() => setIsAutoPlaying(true)}
-        >
+        <div className="relative overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {getVisibleTestimonials().map((testimonial) => (
-              <div key={testimonial.id} className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-green-200">
+              <div key={testimonial.id} className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 p-8 border border-gray-100 hover:border-green-200 hover:bg-white/90">
                 <div className="flex items-center mb-6">
                   <img
                     src={testimonial.image}
@@ -154,21 +138,6 @@ const Testimonials = () => {
               </div>
             ))}
           </div>
-
-          {/* Navigation Buttons */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 z-10"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          
-          <button
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 z-10"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
         </div>
       </div>
     </section>

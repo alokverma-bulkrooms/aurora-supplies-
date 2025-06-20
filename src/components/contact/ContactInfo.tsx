@@ -36,19 +36,31 @@ const ContactInfo = () => {
             <div className="text-2xl">💬</div>
             <div>
               <h4 className="font-medium text-green-600 text-lg">Live Chat</h4>
-              <p className="text-gray-900 font-medium">Available 24/7</p>
+              <p className="text-gray-900 font-medium">
+                <a 
+                  href="https://wa.me/14849166583" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-green-700 transition-colors duration-200 underline"
+                >
+                  Available 24/7
+                </a>
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Services Section */}
+      {/* Services Section - Enhanced Design */}
       <div>
         <h3 className="text-xl font-bold mb-6 text-gray-900">Our Services</h3>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {services.map((service, index) => (
-            <div key={index} className="bg-white p-3 rounded-lg shadow-sm text-center">
-              <span className="text-sm font-medium text-gray-700">{service}</span>
+            <div key={index} className="bg-gradient-to-r from-white to-green-50/50 p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-green-100/50 group hover:border-green-200">
+              <div className="flex items-center space-x-3">
+                <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full group-hover:scale-110 transition-transform duration-300"></div>
+                <span className="text-sm font-semibold text-gray-700 group-hover:text-green-700 transition-colors duration-300">{service}</span>
+              </div>
             </div>
           ))}
         </div>

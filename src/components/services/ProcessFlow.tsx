@@ -11,7 +11,7 @@ const ProcessFlow = () => {
     {
       icon: <Search className="w-8 h-8" />,
       title: "AI Matching",
-      description: "Our AI connects you with verified suppliers.",
+      description: "Our AI rapidly sources from global suppliers.",
     },
     {
       icon: <CheckCircle className="w-8 h-8" />,
