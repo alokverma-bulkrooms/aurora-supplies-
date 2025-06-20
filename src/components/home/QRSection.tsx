@@ -1,5 +1,5 @@
 
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { MessageCircle, ArrowRight, Smartphone, FileText, Clock } from "lucide-react";
 
 const QRSection = () => {
   return (
@@ -7,8 +7,8 @@ const QRSection = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl shadow-2xl border border-green-100/50 overflow-hidden backdrop-blur-sm">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-            {/* Left side - QR Code */}
-            <div className="bg-gradient-to-br from-green-50/80 to-emerald-50/60 p-12 flex flex-col items-center justify-center relative">
+            {/* Left side - QR Code - Hidden on mobile/tablet */}
+            <div className="hidden lg:flex bg-gradient-to-br from-green-50/80 to-emerald-50/60 p-12 flex-col items-center justify-center relative">
               {/* Decorative elements */}
               <div className="absolute top-6 left-6 w-16 h-16 bg-green-200/30 rounded-full blur-xl"></div>
               <div className="absolute bottom-6 right-6 w-20 h-20 bg-emerald-200/20 rounded-full blur-2xl"></div>
@@ -43,8 +43,8 @@ const QRSection = () => {
               </a>
             </div>
             
-            {/* Right side - Content */}
-            <div className="p-12 flex flex-col justify-center bg-gradient-to-br from-white to-gray-50/50">
+            {/* Right side - Content - Full width on mobile/tablet */}
+            <div className="p-12 flex flex-col justify-center bg-gradient-to-br from-white to-gray-50/50 lg:col-span-1 col-span-1">
               <div className="mb-8">
                 {/* Aurora Supplies with enhanced design */}
                 <div className="mb-8 relative">
@@ -68,15 +68,21 @@ const QRSection = () => {
                   <h3 className="text-xl font-semibold text-gray-800 mb-4">How to Get Your Quote:</h3>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3 text-gray-700">
-                      <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                      <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center">
+                        <Smartphone className="w-4 h-4" />
+                      </div>
                       <span>Scan QR code or click the WhatsApp button</span>
                     </div>
                     <div className="flex items-center space-x-3 text-gray-700">
-                      <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                      <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center">
+                        <FileText className="w-4 h-4" />
+                      </div>
                       <span>Share your commodity requirements</span>
                     </div>
                     <div className="flex items-center space-x-3 text-gray-700">
-                      <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                      <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center">
+                        <Clock className="w-4 h-4" />
+                      </div>
                       <span>Receive your personalized quote within 24-48 hours</span>
                     </div>
                   </div>
@@ -96,7 +102,7 @@ const QRSection = () => {
                 </a>
                 
                 <div className="text-sm text-gray-600 text-center sm:text-left font-medium">
-                  <strong className="text-green-700">Aurora Supplies</strong> - Your trusted partner in international commodity trading
+                  <strong className="text-green-700">Aurora Supplies</strong> - Revolutionizing Global Trade with Intelligence for Seamless Supply
                 </div>
               </div>
             </div>
