@@ -3,12 +3,12 @@ const TrustSection = () => {
   const features = [
     {
       title: "AI-Powered Analytics",
-      description: "Advanced machine learning algorithms optimize trade routes and predict market trends.",
+      description: "Machine learning algorithms optimize trade routes and predict market trends.",
       icon: "🤖",
     },
     {
       title: "Global Network",
-      description: "Extensive partnerships across 50+ countries ensure seamless international operations.",
+      description: "Partnerships across 50+ countries ensure seamless international operations.",
       icon: "🌐",
     },
     {
@@ -18,7 +18,7 @@ const TrustSection = () => {
     },
     {
       title: "24/7 Support",
-      description: "Round-the-clock customer support across all time zones for uninterrupted service.",
+      description: "Round-the-clock customer support across all time zones.",
       icon: "🕒",
     },
   ];
@@ -30,9 +30,8 @@ const TrustSection = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Why Global Leaders Trust Aurora Supplies
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our cutting-edge technology and proven expertise make us the preferred choice 
-            for international commodity trading.
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Cutting-edge technology and proven expertise for international commodity trading.
           </p>
         </div>
 
