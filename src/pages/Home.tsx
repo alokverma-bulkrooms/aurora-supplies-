@@ -2,7 +2,6 @@
 import QRSection from "../components/home/QRSection";
 import Counters from "../components/home/Counters";
 import TrustSection from "../components/home/TrustSection";
-import Testimonials from "../components/home/Testimonials";
 
 const Home = () => {
   return (
@@ -10,7 +9,6 @@ const Home = () => {
       <QRSection />
       <Counters />
       <TrustSection />
-      <Testimonials />
     </div>
   );
 };
