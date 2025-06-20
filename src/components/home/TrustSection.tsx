@@ -54,25 +54,6 @@ const TrustSection = () => {
             </div>
           ))}
         </div>
-
-        <div className="mt-16 text-center">
-          <div className="bg-white rounded-2xl p-8 shadow-xl max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 items-center">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">ISO 9001</div>
-                <div className="text-gray-600">Certified Quality</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">A+ Rating</div>
-                <div className="text-gray-600">Financial Stability</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">99.9%</div>
-                <div className="text-gray-600">Uptime Guarantee</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
