@@ -26,13 +26,13 @@ const ProcessFlow = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-teal-800 to-emerald-900 text-white">
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
             How It Works
           </h2>
-          <p className="text-lg text-emerald-200 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Simple process, powerful results.
           </p>
         </div>
@@ -43,10 +43,10 @@ const ProcessFlow = () => {
               <div className="bg-gradient-to-r from-emerald-500 to-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
                 {step.icon}
               </div>
-              <h3 className="text-lg font-bold text-white mb-3">
+              <h3 className="text-lg font-bold text-gray-900 mb-3">
                 {step.title}
               </h3>
-              <p className="text-emerald-200 leading-relaxed">{step.description}</p>
+              <p className="text-gray-600 leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>

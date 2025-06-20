@@ -17,7 +17,7 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed w-full z-[100] bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-200/20">
+    <nav className="fixed w-full z-[100] bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-200/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
@@ -28,10 +28,10 @@ const Navbar = () => {
                 className="h-12 w-12 rounded-lg shadow-lg group-hover:shadow-green-500/50 transition-all duration-300"
               />
               <div className="flex flex-col">
-                <span className="text-2xl font-bold text-slate-800">
+                <span className="text-2xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
                   Aurora
                 </span>
-                <span className="text-slate-700 text-sm font-light -mt-1">Supplies</span>
+                <span className="text-slate-600 text-sm font-light -mt-1">Supplies</span>
               </div>
             </Link>
           </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
               </Link>
             ))}
             <a 
-              href="https://wa.me/1484916-6583" 
+              href="https://wa.me/14849166583" 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-6 py-2 rounded-lg font-medium shadow-lg hover:shadow-green-500/25 transform hover:scale-105 transition-all duration-300 text-lg"
@@ -91,7 +91,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <a 
-                href="https://wa.me/1484916-6583" 
+                href="https://wa.me/14849166583" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full mt-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-4 py-2 rounded-lg font-medium block text-center"

@@ -16,10 +16,10 @@ const Footer = () => {
                 className="h-10 w-10 rounded-lg shadow-lg"
               />
               <div className="flex flex-col">
-                <span className="text-xl font-bold bg-gradient-to-r from-green-400 to-emerald-300 bg-clip-text text-transparent">
+                <span className="text-xl font-bold bg-gradient-to-r from-slate-300 to-slate-100 bg-clip-text text-transparent">
                   Aurora
                 </span>
-                <span className="text-green-200 text-sm font-medium -mt-1">Supplies</span>
+                <span className="text-slate-300 text-sm font-light -mt-1">Supplies</span>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed max-w-sm">

@@ -1,5 +1,5 @@
 
-import { MessageCircle, ArrowRight, Smartphone, FileText, Clock } from "lucide-react";
+import { MessageCircle, Smartphone, FileText, Clock } from "lucide-react";
 
 const QRSection = () => {
   return (
@@ -15,7 +15,7 @@ const QRSection = () => {
               
               <div className="text-center mb-6 relative z-10">
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  Instant Quotes, One Scan Away
+                  Scan to Connect Instantly
                 </h2>
               </div>
               
@@ -82,9 +82,7 @@ const QRSection = () => {
                   className="inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/50 w-full sm:w-auto group"
                 >
                   <MessageCircle className="w-6 h-6" />
-                  <span className="block sm:hidden">Chat on WhatsApp</span>
-                  <span className="hidden sm:block">Start Your Quote Request</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  <span>Chat on WhatsApp</span>
                 </a>
               </div>
             </div>
