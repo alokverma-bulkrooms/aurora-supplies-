@@ -33,7 +33,7 @@ const QRSection = () => {
             <div className="p-8 lg:p-10 flex flex-col justify-center bg-gradient-to-br from-white to-gray-50/50 lg:col-span-1 col-span-1">
               
               <div className="mb-6 lg:mb-8">
-                <p className="text-black text-xl lg:text-2xl leading-relaxed lg:mb-8 mb-6 font-semibold">
+                <p className="text-black text-lg lg:text-xl leading-relaxed lg:mb-8 mb-6 font-semibold">
                   Reduces what typically takes 20–25 days to just 24–48 hours, delivering optimized quotes at the best value.
                 </p>
                 
