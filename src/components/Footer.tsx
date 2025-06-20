@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -121,7 +120,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-center">
-              © 2024 Aurora Supplies. All rights reserved.
+              © 2025 Murugan Enterprises(Aurora Supplies). All rights reserved.
             </p>
           </div>
         </div>
