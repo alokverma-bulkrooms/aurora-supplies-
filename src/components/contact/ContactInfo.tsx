@@ -1,4 +1,3 @@
-
 const ContactInfo = () => {
   const services = [
     "Global Sourcing",
@@ -52,25 +51,12 @@ const ContactInfo = () => {
       </div>
 
       {/* Services Section */}
-      <div className="mb-12">
+      <div>
         <h3 className="text-xl font-bold mb-6 text-gray-900">Our Services</h3>
         <div className="grid grid-cols-2 gap-3">
           {services.map((service, index) => (
             <div key={index} className="bg-white p-3 rounded-lg shadow-sm text-center">
               <span className="text-sm font-medium text-gray-700">{service}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Countries Section */}
-      <div>
-        <h3 className="text-xl font-bold mb-6 text-gray-900">Countries We Serve</h3>
-        <div className="grid grid-cols-3 gap-4">
-          {countries.map((country, index) => (
-            <div key={index} className="bg-white p-4 rounded-lg shadow-sm text-center">
-              <div className="text-2xl mb-2">{country.flag}</div>
-              <span className="text-sm font-medium text-gray-700">{country.name}</span>
             </div>
           ))}
         </div>

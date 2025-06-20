@@ -8,10 +8,12 @@ const ContactForm = () => {
     name: "",
     email: "",
     company: "",
+    country: "",
+    subject: "",
     message: ""
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -22,8 +24,8 @@ const ContactForm = () => {
     e.preventDefault();
     
     // Create mailto link
-    const subject = `Contact from ${formData.name}`;
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`;
+    const subject = `${formData.subject} - Contact from ${formData.name}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nCountry: ${formData.country}\nSubject: ${formData.subject}\n\nMessage:\n${formData.message}`;
     const mailtoLink = `mailto:team@aurora.supplies?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     // Open email client
@@ -39,6 +41,8 @@ const ContactForm = () => {
       name: "",
       email: "",
       company: "",
+      country: "",
+      subject: "",
       message: ""
     });
   };
@@ -96,6 +100,54 @@ const ContactForm = () => {
         </div>
 
         <div>
+          <label htmlFor="country" className="block text-sm font-medium text-gray-700 mb-2">
+            Country *
+          </label>
+          <select
+            id="country"
+            name="country"
+            required
+            value={formData.country}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+          >
+            <option value="">Select your country</option>
+            <option value="India">India</option>
+            <option value="USA">United States</option>
+            <option value="China">China</option>
+            <option value="Germany">Germany</option>
+            <option value="Japan">Japan</option>
+            <option value="Brazil">Brazil</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+            Subject *
+          </label>
+          <select
+            id="subject"
+            name="subject"
+            required
+            value={formData.subject}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+          >
+            <option value="">Select subject</option>
+            <option value="Quote Request">Quote Request</option>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Partnership">Partnership</option>
+            <option value="Technical Support">Technical Support</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
             Message *
           </label>
@@ -107,7 +159,7 @@ const ContactForm = () => {
             value={formData.message}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
-            placeholder="Tell us about your commodity trading requirements..."
+            placeholder="Tell us about your requirements..."
           ></textarea>
         </div>
 
