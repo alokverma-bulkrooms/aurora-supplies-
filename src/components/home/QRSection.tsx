@@ -22,7 +22,7 @@ const QRSection = () => {
               {/* QR Code */}
               <div className="bg-white p-6 rounded-2xl shadow-xl border-2 border-green-200/50 mb-6 relative z-10 hover:shadow-2xl transition-all duration-300">
                 <img 
-                  src="/lovable-uploads/94c87f1c-bbd6-4dd8-8a19-325238fb12d1.png" 
+                  src="/lovable-uploads/fcb1e7ac-af3b-45f5-8b71-c7065640fb74.png" 
                   alt="WhatsApp QR Code" 
                   className="w-40 h-40 object-contain"
                 />
