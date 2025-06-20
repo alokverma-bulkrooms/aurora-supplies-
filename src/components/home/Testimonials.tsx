@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
@@ -140,12 +140,6 @@ const Testimonials = () => {
                     </div>
                   </div>
                   
-                  <div className="flex mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  
                   <p className="text-gray-700 leading-relaxed italic text-lg">
                     "{testimonial.content}"
                   </p>
@@ -168,21 +162,6 @@ const Testimonials = () => {
           >
             <ChevronRight className="w-6 h-6" />
           </button>
-
-          {/* Dots Indicator */}
-          <div className="flex justify-center mt-8 space-x-2">
-            {Array.from({ length: testimonials.length - 2 }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentIndex 
-                    ? 'bg-green-600 w-8' 
-                    : 'bg-gray-300 hover:bg-gray-400'
-                }`}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </section>
