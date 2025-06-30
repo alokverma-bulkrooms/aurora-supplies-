@@ -27,7 +27,7 @@ const ContactInfo = () => {
           <div className="flex items-start space-x-4 bg-white p-4 rounded-lg shadow-sm">
             <div className="text-2xl">📞</div>
             <div>
-              <h4 className="font-medium text-green-600 text-lg">+1 (484) 916-6583</h4>
+              <h4 className="font-medium text-green-600 text-lg">+1 (484) 789-6941</h4>
               <p className="text-gray-900 font-medium">Available 24/7</p>
             </div>
           </div>
@@ -38,7 +38,7 @@ const ContactInfo = () => {
               <h4 className="font-medium text-green-600 text-lg">Live Chat</h4>
               <p className="text-gray-900 font-medium">
                 <a 
-                  href="https://wa.me/14849166583" 
+                  href="https://wa.me/+14847896941" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-green-700 transition-colors duration-200 underline"

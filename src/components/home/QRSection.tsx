@@ -22,7 +22,7 @@ const QRSection = () => {
               {/* QR Code */}
               <div className="bg-white p-6 rounded-2xl shadow-xl border-2 border-green-200/50 mb-6 relative z-10 hover:shadow-2xl transition-all duration-300">
                 <img 
-                  src="/lovable-uploads/fcb1e7ac-af3b-45f5-8b71-c7065640fb74.png" 
+                  src="/lovable-uploads/e7e6fd45-7556-4436-b6a7-d5db3d9e2c85.png" 
                   alt="WhatsApp QR Code" 
                   className="w-40 h-40 object-contain"
                 />
@@ -65,7 +65,7 @@ const QRSection = () => {
                 {/* WhatsApp Button - Only visible on mobile/tablet */}
                 <div className="lg:hidden">
                   <a 
-                    href="https://wa.me/14849166583" 
+                    href="https://wa.me/+14847896941" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#128C7E] hover:to-[#25D366] text-white px-6 py-3 rounded-full font-semibold inline-flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/50 w-full justify-center"

@@ -1,3 +1,4 @@
+
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -103,7 +104,7 @@ const Footer = () => {
                 <div className="bg-emerald-600/20 p-3 rounded-lg group-hover:bg-emerald-600/40 transition-colors duration-300">
                   <Phone className="h-5 w-5 text-emerald-400" />
                 </div>
-                <a href="https://wa.me/14849166583" className="text-gray-300 hover:text-green-400 transition-colors duration-300 text-base">
+                <a href="https://wa.me/+14847896941" className="text-gray-300 hover:text-green-400 transition-colors duration-300 text-base">
                   WhatsApp Chat
                 </a>
               </div>
