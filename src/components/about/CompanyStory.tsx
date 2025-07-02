@@ -10,12 +10,10 @@ const CompanyStory = () => {
             </h1>
             <div className="space-y-4 text-base lg:text-lg leading-relaxed text-gray-700">
               <p>
-                Founded in 2017 in Bangalore, Karnataka, India, Aurora Supplies revolutionizes global sourcing 
-                through AI-powered supplier networks.
+                Headquartered in Bangalore, Aurora Supplies is transforming global sourcing with AI-driven efficiency and deep industry expertise.
               </p>
               <p>
-                We connect businesses worldwide with trusted suppliers, 
-                delivering optimized quotes in 24-48 hours.
+                Our platform connects businesses with verified suppliers and delivers competitive quotes in 24–48 hours, powered by years of experience in procurement and logistics.
               </p>
             </div>
           </div>
@@ -27,19 +25,19 @@ const CompanyStory = () => {
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   <div>
-                    <div className="font-medium text-gray-900 text-sm lg:text-base">2017 - Founded in Bangalore</div>
+                    <div className="font-medium text-gray-900 text-sm lg:text-base">Built on experience – Years of sourcing and supply chain expertise</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   <div>
-                    <div className="font-medium text-gray-900 text-sm lg:text-base">2023 - AI Integration</div>
+                    <div className="font-medium text-gray-900 text-sm lg:text-base">AI from day one – Smart, scalable, and efficient sourcing</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   <div>
-                    <div className="font-medium text-gray-900 text-sm lg:text-base">2025 - $1.5B+ Volume</div>
+                    <div className="font-medium text-gray-900 text-sm lg:text-base">Rapid growth – Projected to cross $1.5B+ in sourcing volume*</div>
                   </div>
                 </div>
               </div>

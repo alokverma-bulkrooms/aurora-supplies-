@@ -56,6 +56,7 @@ const Footer = () => {
               <li>
                 <Link 
                   to="/" 
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="text-gray-300 hover:text-green-400 hover:translate-x-1 transition-all duration-300 inline-block text-base"
                 >
                   Home
@@ -64,6 +65,7 @@ const Footer = () => {
               <li>
                 <Link 
                   to="/about" 
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="text-gray-300 hover:text-green-400 hover:translate-x-1 transition-all duration-300 inline-block text-base"
                 >
                   About Us
@@ -72,6 +74,7 @@ const Footer = () => {
               <li>
                 <Link 
                   to="/services" 
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="text-gray-300 hover:text-green-400 hover:translate-x-1 transition-all duration-300 inline-block text-base"
                 >
                   Services
@@ -80,6 +83,7 @@ const Footer = () => {
               <li>
                 <Link 
                   to="/contact" 
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="text-gray-300 hover:text-green-400 hover:translate-x-1 transition-all duration-300 inline-block text-base"
                 >
                   Contact
@@ -104,7 +108,7 @@ const Footer = () => {
                 <div className="bg-emerald-600/20 p-3 rounded-lg group-hover:bg-emerald-600/40 transition-colors duration-300">
                   <Phone className="h-5 w-5 text-emerald-400" />
                 </div>
-                <a href="https://wa.me/+14847896941" className="text-gray-300 hover:text-green-400 transition-colors duration-300 text-base">
+                <a href="https://wa.me/+14847896941" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors duration-300 text-base">
                   WhatsApp Chat
                 </a>
               </div>
