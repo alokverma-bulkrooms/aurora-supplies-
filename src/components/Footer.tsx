@@ -100,8 +100,8 @@ const Footer = () => {
                 <div className="bg-green-600/20 p-3 rounded-lg group-hover:bg-green-600/40 transition-colors duration-300">
                   <Mail className="h-5 w-5 text-green-400" />
                 </div>
-                <a href="mailto:team@aurora.supplies" className="text-gray-300 hover:text-green-400 transition-colors duration-300 text-base">
-                  team@aurora.supplies
+                <a href="mailto:contact@aurora.supplies" className="text-gray-300 hover:text-green-400 transition-colors duration-300 text-base">
+                  contact@aurora.supplies
                 </a>
               </div>
               <div className="flex items-center space-x-3 group">

@@ -20,7 +20,7 @@ const ContactInfo = () => {
             <div className="text-2xl">📧</div>
             <div>
               <h4 className="font-medium text-green-600 text-lg">Email Us</h4>
-              <p className="text-gray-900 font-medium">team@aurora.supplies</p>
+              <p className="text-gray-900 font-medium">contact@aurora.supplies</p>
             </div>
           </div>
           

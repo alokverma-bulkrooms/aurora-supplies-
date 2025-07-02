@@ -26,7 +26,7 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbz6-Ysr5KcJvCXCYRlN6M6znaKhOAkz1wCBUOkUGYEKs14CtvToAWwouoEf_c-YqnhGMA/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbx0f1EKDFCd5HlMcjWsmYS7L6WEY1sAitMFswlnlpawWGc6xTo3g_Ffh2TlJmUlqMOSvw/exec", {
         method: "POST",
         mode: "no-cors",
         headers: {
